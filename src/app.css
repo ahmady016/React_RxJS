@@ -1,0 +1,7 @@
+body {
+  background-color: #ffe2c4;
+}
+button.btn {
+  display: block;
+  margin: 20px;
+}
