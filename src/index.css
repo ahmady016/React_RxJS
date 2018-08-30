@@ -3,4 +3,6 @@
 /* Material Icons Font */
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 /* fontawesome Icons */
-@import 'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
+@import 'https://use.fontawesome.com/releases/v5.2.0/css/all.css';
+/* react-toastify */
+@import '../node_modules/react-toastify/dist/ReactToastify.min.css';

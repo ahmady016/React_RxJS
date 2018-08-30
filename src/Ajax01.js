@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import ajax from './ajax.01';
+import { toast } from 'react-toastify';
 
 export default (props) => {
   return (
@@ -8,8 +9,13 @@ export default (props) => {
         className="waves-effect waves-light btn"
         onClick={() =>
           ajax.send("FETCH_USERS", { method: "get", url: "/users" })
-              .then(console.log)
-              .catch(console.log)
+              .then(users => toast.info(
+                <div>
+                  <h4>Users: {users.length}</h4>
+                  {users.map(user => <div>{user.name}</div>)}
+                </div>
+              ))
+            .catch(console.log)
         }
       >
         <i className="material-icons left">send</i>
